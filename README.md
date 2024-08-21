@@ -1,10 +1,10 @@
-# Attachment Uploader
+# Attachment Sharepoint Uploader
 
-A Power App code component to easily upload one or more attachments on Dynamics365 records. Works with Email and normal Notes attachments.
+A Power App code component to easily upload one or more attachments on Dynamics365 records. Works with sharepoint documents attachments.
 
 ## Installation
 
-Download the unmanaged/managed solution from the [Releases](https://github.com/ramarao9/AttachmentUploader/releases)
+Download the unmanaged/managed solution from the [Releases]
 
 ### Setting up the control
 
