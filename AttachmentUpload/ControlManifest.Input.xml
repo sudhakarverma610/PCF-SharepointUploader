@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="TKMX" constructor="AttachmentUpload" version="1.1.1" display-name-key="AttachmentUpload" 
+           description-key="Upload attachments easily using drag and drop" control-type="standard">
+    <type-group name="flds">
+      <type>SingleLine.Text</type>
+      <type>SingleLine.Phone</type>
+      <type>SingleLine.Email</type>
+      <type>SingleLine.Ticker</type>
+      <type>TwoOptions</type>
+      <type>Whole.None</type>
+      <type>Currency</type>
+      <type>FP</type>
+      <type>Decimal</type>
+    </type-group>
+    <property name="Attribute" display-name-key="Attribute" description-key="Select an Attribute" of-type-group="flds" 
+              usage="bound" />
+		
+    <property name="ControlNameForRefresh" display-name-key="ControlNameForRefresh" description-key="ControlNameForRefresh"  
+              usage="input"  of-type="SingleLine.Text"/>
+
+    <property name="UseNoteAttachment" display-name-key="UseNoteAttachment" description-key="Upload as attachment on the Notes entity when Email or Appointment instead of Attachment(ActivityMimeAttachment)"  
+              usage="input" of-type="Enum">
+         <value name="No" display-name-key="No" default="true">0</value>
+         <value name="Yes" display-name-key="Yes">1</value>
+    </property>
+
+
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="AttachmentUploader.css" order="2" />
+      
+      <!-- English -->
+      <resx path="AttachmentUpload.1033.resx" version="1.0.0" /> 
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
